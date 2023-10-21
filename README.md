@@ -30,7 +30,26 @@ Before you begin, make sure you have the following installed:
 
 ### Installing
 
-@@ -47,3 +54,5 @@ Before you begin, make sure you have the following installed:
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/trainer-app-frontend.git
+   cd trainer-app-frontend
+   npm install
+   npm start
+   ```
+### Deployment
+
+- When you're ready to deploy the app, use the following command to build a production-ready version:
+  npm run build
+
+### Features
+
+- List the key features and functionalities of your trainer app.
+
+### Contributing
+
+- We welcome contributions from the open-source community! If you'd like to contribute to this project, please follow our contribution guidelines.
 ### License
 
 - This project is licensed under the MIT License - see the LICENSE.md file for details.
