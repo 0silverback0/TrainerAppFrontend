@@ -1,7 +1,7 @@
 import './App.css';
 //import CoachInfo from './CoachInfo';
 //import ExerciseSearch from './ExerciseSearch';
-import Header from './Header';
+//import Header from './Header';
 //import SideBar from './SideBar';
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import Clients from './Clients';
