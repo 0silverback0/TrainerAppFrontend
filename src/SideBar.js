@@ -5,7 +5,7 @@ import LogoutButton from './LogoutButton';
 const SideBar = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const [hideSidebar , sethideSidebar]=useState(true)
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -38,7 +38,14 @@ const SideBar = () => {
 
 
   return (
-    <div
+    <>
+    <div onClick={()=>sethideSidebar(!hideSidebar)}>
+    <h1 style={{
+      
+      position:"fixed",
+    }}>  {hideSidebar==true?"Hide":"show"}</h1>
+    </div>
+   {hideSidebar&& <div
       className="sidebar"
       style={{
         height: '100vh',
@@ -48,7 +55,7 @@ const SideBar = () => {
         padding: '20px',
         position: 'fixed',
         marginTop: '50px',
-        top: 0,
+        top: '84px',
         left: 0,
       }}
     >
@@ -79,7 +86,8 @@ const SideBar = () => {
 
       <SignupForm />
      <LogoutButton />
-    </div>
+    </div>}
+    </>
   );
 };
 
