@@ -8,13 +8,11 @@ const Body=()=>{
 
     return(
         <>
-        <h1>hhh</h1>
-        
-       <Header /> 
-        <SideBar/>
-        <CoachInfo/>
-        <ExerciseSearch/>
-        <Outlet/>
+            <Header />
+            {/* <SideBar /> */}
+            <CoachInfo />
+            <ExerciseSearch />
+            <Outlet/>
         </>
     )
 }
