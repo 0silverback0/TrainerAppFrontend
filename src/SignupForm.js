@@ -44,8 +44,8 @@ const SignupForm = () => {
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-md-6">
-          <form onSubmit={handleSubmit}>
+        <div className="col-md-12">
+          <form onSubmit={handleSubmit} className='d-flex flex-column gap-2'>
             <div className="form-group">
               <label htmlFor="username">Username</label>
               <input
@@ -96,7 +96,7 @@ const SignupForm = () => {
                 onChange={handleChange}
               />
             </div>
-            <button type="submit" className="btn btn-primary">Sign Up</button>
+            <button type="submit" className="btn btn-primary mt-2">Sign Up</button>
           </form>
         </div>
       </div>
