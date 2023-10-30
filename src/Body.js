@@ -8,7 +8,7 @@ const Body=()=>{
 
     return(
         <>
-        <h1>hhh</h1>
+        <h1>Trainer App</h1>
         
        <Header /> 
         <SideBar/>
